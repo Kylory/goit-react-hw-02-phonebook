@@ -11,6 +11,16 @@ class Form extends Component {
     this.setState({ [name]: value });
   };
 
+  handleSubmit = e => {
+    e.preventDefault();
+    this.props.onSubmit(this.state)
+    this.reset()
+  }
+  
+  reset = () => {
+    this.setState({ name: '',  number: ''});
+  }
+
   render() {
     return (
       <>
