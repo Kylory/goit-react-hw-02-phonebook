@@ -5,8 +5,5 @@
 
 .searchContacts input {
   width: 200px;
+  margin-top: 10px;
 }
-
-/* .searchContacts label {
-  display: block;
-} */
